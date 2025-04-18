@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: green;
+    color-scheme: light;
+}
+
+.toggle {
+    font-size: 3rem;
+    display: block;
+    margin: 50px;
+
+}
+
+button {
+    margin-right: 20px;
+    font-size: 4rem;
+}
+div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 5rem;
+    transform: translate(-50%, -50%);
+    background-color: dodgerblue;
+    color: white;
+    width: fit-content;
+    border: 2px solid white;
+}
