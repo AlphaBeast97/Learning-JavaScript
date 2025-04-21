@@ -112,12 +112,15 @@ let promise = new Promise((resolve, reject) => {
 
 // lets look at the get data example again
 const getData = (dataID, getNextData) => {
-    setTimeout(() => {
-        console.log("DATA", dataID);
-        if(getNextData){
-            getNextData();
-        }
-    }, 2000);
+    return new Promise ((resolve, reject) => {  
+        setTimeout(() => {
+            console.log("DATA", dataID);
+            resolve("success");
+            if(getNextData){
+                getNextData();
+            }
+        }, 5000);
+    })
 }
 
 getData(10000004, () => {
